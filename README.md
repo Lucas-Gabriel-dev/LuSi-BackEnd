@@ -47,58 +47,58 @@ Com essa rota você pode consultar todas as tarefas que o usuário autenticado p
 #### Add Option Task - https://localhost:7288/Lusi/addtaskoption?idTask={id}
 Nesta rota você adiciona novas opções em uma tarefa. A tarefa é identificada pelo ID passado pelo parametro.<br>
 JSON:<br>
-[
-	"opção 1",
-	"opção 2"
-]
+[<br>
+   "opção 1",<br>
+   "opção 2"<br>
+]<br>
 
 #### Add Task  - https://localhost:7288/lusi/addtask
 Nesta rota você pode adicionar uma nova tarefa. <br>
-JSON:<br>
-{
-  "title": "Titulo",
-  "description": "Descricao",
-	"deadLine": "2022-10-30", // Prazo para concluir tarefa
-  "taskOptions": [ // Opções da tarefa
-    {
-      "name": "opcao1"
-    },
-		{
-      "name": "opcao2"
-    }
-  ]
-}
+JSON: <br>
+{ <br>
+  "title": "TesteAgora", <br>
+  "description": "Livros", <br>
+	"deadLine": "2022-10-30", // Prazo para concluir tarefa <br>
+  "taskOptions": [ // Opções da tarefa <br>
+    { <br>
+      "name": "aa" <br>
+    }, <br>
+    { <br>
+      "name": "Teste2" <br>
+    } <br>
+  ] <br>
+} <br>
 
 #### Create User - https://localhost:7288/user/CreateUser
 Com essa rota você pode criar um novo usuário.<br>
 JSON: <br>
 {
-	"name": "nome",
-	"email": "lucas@teste.com",
-	"password": "senha123"
+    "name": "nome", <br>
+    "email": "lucas@teste.com", <br>
+    "password": "senha123" <br>
 }
 
 ### PATCH
 #### Edit Info Task - https://localhost:7288/lusi/edittask
 Como essa rota você pode atualizar informações sobre akguma tarefa, basta passa o ID da tarefa que desejar e o que deseja mudar. <br>
 JSON: <br>
-{
-	"id": 3,
-  "title": "Novo Titulo",
-  "description": "Nova descrição"
-}
+{ <br>
+  "id": 3, <br>
+  "title": "Novo Titulo", <br>
+  "description": "Nova descrição" <br>
+} <br>
 
 #### Update Option Task - https://localhost:7288/lusi/EditOptionsTask
 Com essa rota você pode atualizar as opções de uma tarefa. <br>
 JSON: <br>
-[
-	{
-		"id": 37,
-    "name": "teste",
-    "currentTaskId": 3, //Id da tarefa que deseja atualizar as opções
-    "complete": false
- 	}
- ]
+[ <br>
+  { <br>
+    "id": 37, <br>
+    "name": "teste", <br>
+    "currentTaskId": 3, //Id da tarefa que deseja atualizar as opções <br>
+    "complete": false <br>
+  } <br>
+ ] <br>
  
  ### DELETE
  #### Delete Task - https://localhost:7288/Lusi/DeleteTask/{id}
